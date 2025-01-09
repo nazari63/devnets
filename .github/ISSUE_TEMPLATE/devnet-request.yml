@@ -18,7 +18,7 @@ body:
       description: When does this devnet need to be deployed by?
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     id: scope
     attributes:
       label: Scope
