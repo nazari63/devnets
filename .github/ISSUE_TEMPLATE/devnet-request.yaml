@@ -1,0 +1,42 @@
+name: Devnet Request
+description: Request a new devnet.
+title: "[Devnet Request]: "
+labels: ["scoping"]
+
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What should we call this devnet?
+    validations:
+      required: true
+  - type: input
+    id: deployment_date
+    attributes:
+      label: Deployment date
+      description: When does this devnet need to be deployed by?
+    validations:
+      required: true
+  - type: markdown
+    id: scope
+    attributes:
+      label: Scope
+      description: What features are going to be deployed in this devnet?
+    validations:
+      required: true
+  - type: input
+    id: op_node_version
+    attributes:
+      label: `op-node` version
+      description: `op-node` tag to release. Optional. Leave as TBD if unknown.
+  - type: input
+    id: op_geth_version
+    attributes:
+      label: `op-geth` version
+      description: `op-geth` tag to release. Optional. Leave as TBD if unknown.
+  - type: input
+    id: op_reth_version
+    attributes:
+      label: `op-reth` version
+      description: `op-reth` tag to release. Optional. Leave as TBD if unknown.
