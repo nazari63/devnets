@@ -28,15 +28,15 @@ body:
   - type: input
     id: op_node_version
     attributes:
-      label: `op-node` version
-      description: `op-node` tag to release. Optional. Leave as TBD if unknown.
+      label: op-node version
+      description: op-node tag to release. Optional. Leave as TBD if unknown.
   - type: input
     id: op_geth_version
     attributes:
-      label: `op-geth` version
-      description: `op-geth` tag to release. Optional. Leave as TBD if unknown.
+      label: op-geth version
+      description: op-geth tag to release. Optional. Leave as TBD if unknown.
   - type: input
     id: op_reth_version
     attributes:
-      label: `op-reth` version
-      description: `op-reth` tag to release. Optional. Leave as TBD if unknown.
+      label: op-reth version
+      description: op-reth tag to release. Optional. Leave as TBD if unknown.
