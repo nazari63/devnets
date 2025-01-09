@@ -41,7 +41,9 @@ Before we deploy a devnet we will publish a deployment manifest, including:
   - Contracts versions (can be a sha or tag)
   - Configuration flags that need to be set on node software
 
-When we make changes to devnets, including bug fix deployments, etc we will make srue to update this repo so external users can follow the upgrades.
+When we make changes to devnets, including bug fix deployments, etc we will update this file so external users can follow the upgrades.
+
+See [MANIFEST.md](./MANIFEST.md) for the manifest file format and example.
 
 ### Artifact File
 
