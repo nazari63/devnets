@@ -1,5 +1,6 @@
 name: alpaca
 type: alphanet
+scope: https://github.com/ethereum-optimism/devnets/issues/1
 l1:
   name: sepolia
   chain_id: 11155111

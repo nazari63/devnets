@@ -16,7 +16,7 @@ This section configures parameters used during the deployment of the L2 network:
 - `op-deployer`: Version of the deployment tooling to use (tag or git sha)
 - `l1-contracts`: Locator for the L1 contract implementations to deploy
 - `l2-contracts`: Locator for the L2 contract implementations to deploy
-- `overrides`: Optional configuration overrides for deployment parameters
+- `overrides`: Optional configuration overrides for deployment parameters, for example:
   - `seconds_per_slot`: Block time in seconds
   - `fjord_time_offset`: Timestamp offset for the Fjord hardfork activation
   - `granite_time_offset`: Timestamp offset for the Granite hardfork activation
@@ -44,6 +44,7 @@ Each network entry inherits the default component versions and configurations de
 ```yaml
 name: devnet
 type: alphanet
+scope: <scoping-issue-url>
 l1:
   name: sepolia
   chain_id: 11155111
