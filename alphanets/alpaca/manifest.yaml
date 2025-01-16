@@ -1,0 +1,35 @@
+name: alpaca
+type: alphanet
+l1:
+  name: sepolia
+  chain_id: 11155111
+l2:
+  deployment:
+    op-deployer:
+      version: op-deployer/v0.0.11
+    l1-contracts:
+      locator: https://storage.googleapis.com/oplabs-contract-artifacts/artifacts-v1-c3f2e2adbd52a93c2c08cab018cd637a4e203db53034e59c6c139c76b4297953.tar.gz
+      version: 984bae9146398a2997ec13757bfe2438ca8f92eb
+    l2-contracts:
+      version: op-contracts/v.1.7.0-beta.1+l2-contracts
+    overrides:
+      seconds_per_slot: 2
+      fjord_time_offset: 0
+      granite_time_offset: 0
+      holocene_time_offset: 0
+  components:
+    op-node:
+      version: op-node/v1.10.2
+    op-geth:
+      version: op-geth/v1.101411.4-rc.4
+    op-reth:
+      version: op-reth/v1.1.5
+    op-proposer:
+      version: op-proposer/v1.10.0-rc.2
+    op-batcher:
+      version: op-batcher/v1.10.0
+    op-challenger:
+      version: op-challenger/v1.3.1-rc.4
+  chains:
+  - name: alpaca-0
+    chain_id: 11155111100000
