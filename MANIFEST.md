@@ -78,6 +78,8 @@ l2:
         OP_BATCHER_MAX_CHANNEL_DURATION: "1h"
     op-challenger:
       version: v0.0.0
+  bootnodes:
+    - <enode uri>
   chains:
   - name: devnet-0
     chain_id: 901
