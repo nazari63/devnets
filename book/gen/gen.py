@@ -9,6 +9,7 @@ class DevnetDocGenerator:
     def __init__(self, base_dir):
         self.base_dir = Path(base_dir)
         self.alphanets_dir = self.base_dir / 'alphanets'
+        self.betanets_dir = self.base_dir / 'betanets'
         self.book_dir = self.base_dir / 'book'
         self.templates_dir = self.book_dir / 'gen' / 'templates'
         self.output_dir = self.book_dir / 'src'
@@ -64,9 +65,13 @@ class DevnetDocGenerator:
         print("Successfully generated SUMMARY.md")
 
     def process_devnets(self):
+        self.process(self.alphanets_dir)
+        self.process(self.betanets_dir)
+
+    def process(self, devnets_dir):
         """Process all devnet manifests and generate corresponding markdown files."""
         # Find all alphanet directories
-        for devnet_dir in self.alphanets_dir.iterdir():
+        for devnet_dir in devnets_dir.iterdir():
             if not devnet_dir.is_dir():
                 continue
 
