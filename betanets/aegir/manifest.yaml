@@ -1,8 +1,8 @@
 name: aegir
 type: betanet
 scope: https://github.com/ethereum-optimism/devnets/issues/5
-status: pending
-# deployed_on: 01-28-2025
+status: online
+deployed_on: 01-29-2025
 description: |
   * OPCM Upgrades
   * MT-Cannon
