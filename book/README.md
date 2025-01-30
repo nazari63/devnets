@@ -8,8 +8,11 @@ Since most of them are generated, the `src` directory's contents are excluded th
 
 ## Usage
 
-You will first need to install `uv` and `just`. Then:
+You will first need to install `uv`, `mdbook`, and `just`:
 
+`brew install uv mdbook just`
+
+Then:
 1. Generate the devnet docs by running `just generate`.
 2. Run `just serve` to start the local server.
 3. For prod, run `just build` to generate the static site.

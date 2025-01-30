@@ -14,7 +14,7 @@ It was deployed on {{ network.deployed_on }}.
 |------------------------------------|-------|-----------------------------|--------|--------|---------|
 | L1 | {{ network.l1.name | title }}  | `{{ network.l1.chain_id }}` | - | - | - |
 {% for chain in network.l2.chains %}
-| L2 | {{ chain.name }} | `{{ chain.chain_id }}` | [View](https://github.com/ethereum-optimism/devnets/blob/main/alphanets/{{ network.name }}/{{ chain.name }}/chain.yaml) | [View](https://github.com/ethereum-optimism/devnets/blob/main/alphanets/{{ network.name }}/{{ chain.name }}/rollup.json) | [Download](https://raw.githubusercontent.com/ethereum-optimism/devnets/refs/heads/main/alphanets/{{ network.name }}/{{ chain.name }}/genesis.json)
+| L2 | {{ chain.name }} | `{{ chain.chain_id }}` | [View](https://github.com/ethereum-optimism/devnets/blob/main/{{ network.type }}s/{{ network.name }}/{{ chain.name }}/chain.yaml) | [View](https://github.com/ethereum-optimism/devnets/blob/main/{{ network.type }}s/{{ network.name }}/{{ chain.name }}/rollup.json) | [Download](https://raw.githubusercontent.com/ethereum-optimism/devnets/refs/heads/main/{{ network.type }}s/{{ network.name }}/{{ chain.name }}/genesis.json)
 {% endfor %}
 
 ## Deployment Details
