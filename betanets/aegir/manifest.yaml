@@ -46,4 +46,4 @@ l2:
   - name: aegir-0 # permissioned
     chain_id: 420110000
   - name: aegir-1 # permissionless
-    chain_id: 420110001
+    chain_id: 420110002
