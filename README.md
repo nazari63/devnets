@@ -72,3 +72,4 @@ Here's the table converted to markdown format:
 | W3 | - Feature acceptance testing<br>- Load testing (validate performance under stress) |
 | W4 | - Final feature set acceptance testing |
 | W5 | - Retrospective & cleanup |
+This project is a demonstration of blockchain technology and smart contract integration.
